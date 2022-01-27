@@ -3,6 +3,7 @@
     --lightGrey:#ebebeb;
     --envioGreen:#00a751;
     --black:#3d3d3d;
+    --blue:#2e66ff;
 }
 
 *{
@@ -89,7 +90,7 @@ header{
 main{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
+    grid-template-rows: repeat(auto,1fr);
     grid-area: main;
     background-color: var(--lightGrey);
     height: 100vh;
@@ -147,7 +148,8 @@ main{
             }
 
     .container-ultVisita,
-    .container-Ofertas{
+    .container-Ofertas
+    {
         grid-column: 1 / 4;
         background-color: var(--lightGrey);
     }
@@ -271,8 +273,73 @@ main{
 	border: none;
 	margin-right: 0.125rem;
 }
+/* --------------MERCADO PUNTOS-------------------- */
+.container-MercadoPuntos{
+    display: grid;
+    justify-content: center;
+    grid-column: 1 / 4;
+    background-color: var(--lightGrey);
+    margin: 30px 0;
+}
+.MercadoPuntos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    width: 75rem;
+    margin: 1.875rem 2.5rem 1.25rem 1.875rem;
+    border-radius: 0.3125rem;
 
-
-
+}
+     .titulo-container{
+         display: flex;
+     }
+     .titulo-container > a{
+         margin:0 30px;
+         text-decoration: none;
+     }
+     .titulo-container a:hover{
+        color: #4242b4;
+    }
+    .container-MercadoPuntos img{
+        width: 100%;
+        height: 250px;
+        padding: 0 20px;
+    }
     
+/* -----------------DESCUBRI----------------------- */
+.container-descubri{
+    display: flex;
+    justify-content: space-evenly;
+    grid-column: 1 / 4;
+    background-color: var(--lightGrey);
+    margin: 30px 0;
+}
 
+.container-descubri .item1{
+    width: 500px;
+    height: 250px;
+    display: inline-flex;
+    background-color:#fff ;
+    border-radius: 10px;
+    }
+    .itemInt{
+        padding: 20px;
+    }
+    .itemInt P{
+        font-size: 0.70em;
+    }
+    .itemInt > button{
+        width: 96px;
+        height: 36px;
+        border: none;
+        border-radius: 5px;
+        background-color: var(--blue);
+    }
+    .itemInt button a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .item1 img{
+        border-radius: 15px;
+    }
