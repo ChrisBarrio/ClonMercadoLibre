@@ -4,6 +4,7 @@
     --envioGreen:#00a751;
     --black:#3d3d3d;
     --blue:#2e66ff;
+    --lightblue:#6675ce;
 }
 
 *{
@@ -74,17 +75,29 @@ header{
         display: flex;
         justify-content: start;
         align-items: center;
-        color: rgb(104, 104, 104);
         margin-left: 2.5rem;
     }
-        .item-header5 > div{
+    .item-header5 > div{
         margin: 0 0.9375rem 0 0.9375rem;
-
+    }
+    .item-header5 div a{
+            color: rgb(104, 104, 104);
+            text-decoration: none;
+        }
+        .item-header5 div a:hover{
+            color: var(--lightblue);
         }
     .item-header6{
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+    .item-header6 div a{
+        color:var(--black);
+        text-decoration: none;
+    }
+    .item-header6 div a:hover{
+        color: var(--lightblue);
     }  
 
 main{
@@ -345,10 +358,16 @@ main{
     }
 
     /* ----------------GRILLA------------------- */
-
-.grilla{
+.container-grilla{
     display: grid;
     grid-column: 1/ 4;
+    justify-content: center;
+}
+.container-grilla h2{
+    margin: 30px 0 30px 130px;
+}
+.grilla{
+    display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: repeat(2,1fr);
     background-color: var(--lightGrey);
@@ -373,10 +392,18 @@ main{
 }
 .grilla p{
     letter-spacing: 0.0313rem;
+    text-align: center;
 }
 .grilla div i,
 .grilla div p{
     display: flex;
     justify-content: center;
     padding: 10px;
+}
+.grilla div:hover{
+    transform: scale(1.05); 
+    transform-origin: center; 
+    transition: all 1s ease ;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem rgba(0,0,0, .3);
+
 }
