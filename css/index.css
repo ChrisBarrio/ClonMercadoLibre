@@ -343,3 +343,40 @@ main{
     .item1 img{
         border-radius: 15px;
     }
+
+    /* ----------------GRILLA------------------- */
+
+.grilla{
+    display: grid;
+    grid-column: 1/ 4;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: var(--lightGrey);
+    padding: 0 90px;
+}
+.grilla div{
+    display: grid;
+    align-content: center;
+    
+    width: 100% ;
+    height: 170px;
+    background-color: #fff;
+    border: 1px solid var(--lightGrey);
+    padding: 0 20px;
+    margin: 0;
+}
+.grilla a{
+    text-decoration: none;
+}
+.grilla div i{
+    color: var(--blue);
+}
+.grilla p{
+    letter-spacing: 0.0313rem;
+}
+.grilla div i,
+.grilla div p{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
